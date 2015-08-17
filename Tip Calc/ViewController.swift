@@ -38,6 +38,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         currentValue = (tipPercent.text as NSString).doubleValue
         tipStepper.value = currentValue
+        
+        billAmount.becomeFirstResponder()
 
     }
     
@@ -58,6 +60,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         {
             displayResult()
         }
+        else
+        {
+            billAmount.text = ""
+        }
         
     }
     
@@ -72,20 +78,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         {
             displayResult()
         }
-        
     }
     
     func displayResult()
-    {       
-        
+    {
         subTotal = (billAmount.text as NSString).doubleValue
-        
+
         calcTip = subTotal * (currentValue/100)
         
         tipAmount.text = String(format: "$%.2f", calcTip)
         
         totalAmount.text = String(format: "$%.2f", calcTip + subTotal)
     }
-    
 }
 
