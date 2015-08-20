@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var currentValue : Double = 0.0
     var subTotal : Double = 0.0
     var calcTip : Double = 0.0
+    var billAmtStr : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,11 +61,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         {
             displayResult()
         }
-        else
-        {
-            billAmount.text = ""
-        }
-        
     }
     
     @IBAction func stepperValueChanged(sender: UIStepper) {
