@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tipStepper.autorepeat = true
         tipPercent.text = "\(20)"
         
-        currentValue = (tipPercent.text as NSString).doubleValue
+        currentValue = (tipPercent.text! as NSString).doubleValue
         tipStepper.value = currentValue
         
         billAmount.becomeFirstResponder()
@@ -66,9 +66,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func CheckGuestCount(sender: UITextField) {
         
-        if (guestNumber.text != nil && guestNumber.text != "" && (guestNumber.text as NSString).integerValue != 0)
+        if (guestNumber.text != nil && guestNumber.text != "" && (guestNumber.text! as NSString).integerValue != 0)
         {
-            guestNum = (guestNumber.text as NSString).integerValue
+            guestNum = (guestNumber.text! as NSString).integerValue
         }
         else
         {
@@ -82,13 +82,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func calculateTip(sender: UITextField) {
         if (billAmount.text != nil && tipPercent.text != nil)
         {
-            if (billAmount.text.hasPrefix("$"))
+            if (billAmount.text!.hasPrefix("$"))
             {
-                subTotal = (billAmount.text.componentsSeparatedByString("$")[1] as NSString).doubleValue
+                subTotal = (billAmount.text!.componentsSeparatedByString("$")[1] as NSString).doubleValue
             }
             else
             {
-                subTotal = (billAmount.text as NSString).doubleValue
+                subTotal = (billAmount.text! as NSString).doubleValue
             }
             
             subTotal = Double(round(100*subTotal)/100)
@@ -107,7 +107,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         tipPercent.text = Int(sender.value).description
         
-        currentValue = (tipPercent.text as NSString).doubleValue
+        currentValue = (tipPercent.text! as NSString).doubleValue
         
         if (billAmount.text != nil && tipPercent.text != nil)
         {
