@@ -13,6 +13,8 @@
 		0094D7161B8147FB00A76196 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0094D7151B8147FB00A76196 /* Images.xcassets */; };
 		0094D7191B8147FB00A76196 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0094D7171B8147FB00A76196 /* LaunchScreen.xib */; };
 		0094D7251B8147FB00A76196 /* Tip_CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D7241B8147FB00A76196 /* Tip_CalcTests.swift */; };
+		9198F794BD1537BC96A58711 /* Pods_Tip_Calc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28259D68CA056696BED82714 /* Pods_Tip_Calc.framework */; };
+		C46AD0DC7A9494278539E409 /* Pods_Tip_CalcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9B0CD17E9CF1BCAAFE450E /* Pods_Tip_CalcTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,12 @@
 		0094D71E1B8147FB00A76196 /* Tip CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0094D7231B8147FB00A76196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0094D7241B8147FB00A76196 /* Tip_CalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalcTests.swift; sourceTree = "<group>"; };
+		28259D68CA056696BED82714 /* Pods_Tip_Calc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_Calc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9B0CD17E9CF1BCAAFE450E /* Pods_Tip_CalcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_CalcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A089CB6FF82F94A4490C5BA /* Pods-Tip Calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip Calc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tip Calc/Pods-Tip Calc.debug.xcconfig"; sourceTree = "<group>"; };
+		C3FB446D159F99D2B99C5744 /* Pods-Tip CalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip CalcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tip CalcTests/Pods-Tip CalcTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3D275F0416BB5A825FB9734 /* Pods-Tip Calc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip Calc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tip Calc/Pods-Tip Calc.release.xcconfig"; sourceTree = "<group>"; };
+		DEF1980E4CA25DCD8C215FD4 /* Pods-Tip CalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip CalcTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tip CalcTests/Pods-Tip CalcTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9198F794BD1537BC96A58711 /* Pods_Tip_Calc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46AD0DC7A9494278539E409 /* Pods_Tip_CalcTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				0094D70B1B8147FB00A76196 /* Tip Calc */,
 				0094D7211B8147FB00A76196 /* Tip CalcTests */,
 				0094D70A1B8147FB00A76196 /* Products */,
+				867DC0E9118E87352D8BD183 /* Pods */,
+				D2CE51D0D63F92C6EBD7E1C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +124,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		867DC0E9118E87352D8BD183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A089CB6FF82F94A4490C5BA /* Pods-Tip Calc.debug.xcconfig */,
+				D3D275F0416BB5A825FB9734 /* Pods-Tip Calc.release.xcconfig */,
+				DEF1980E4CA25DCD8C215FD4 /* Pods-Tip CalcTests.debug.xcconfig */,
+				C3FB446D159F99D2B99C5744 /* Pods-Tip CalcTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2CE51D0D63F92C6EBD7E1C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28259D68CA056696BED82714 /* Pods_Tip_Calc.framework */,
+				6D9B0CD17E9CF1BCAAFE450E /* Pods_Tip_CalcTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0094D7281B8147FB00A76196 /* Build configuration list for PBXNativeTarget "Tip Calc" */;
 			buildPhases = (
+				29D651EAC0281F4C769383EB /* [CP] Check Pods Manifest.lock */,
 				0094D7051B8147FB00A76196 /* Sources */,
 				0094D7061B8147FB00A76196 /* Frameworks */,
 				0094D7071B8147FB00A76196 /* Resources */,
+				B838455BDB0AB9B1ACC66A2A /* [CP] Embed Pods Frameworks */,
+				2073C9AA001C42E838A982DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0094D72B1B8147FB00A76196 /* Build configuration list for PBXNativeTarget "Tip CalcTests" */;
 			buildPhases = (
+				007265D4A95E2D93F5F7CFDF /* [CP] Check Pods Manifest.lock */,
 				0094D71A1B8147FB00A76196 /* Sources */,
 				0094D71B1B8147FB00A76196 /* Frameworks */,
 				0094D71C1B8147FB00A76196 /* Resources */,
+				790ACA2F9EB6B52CA8336FAE /* [CP] Embed Pods Frameworks */,
+				6AF4AC01F8A8ECFCF8D2EB06 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,15 +195,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = LimauroDev;
 				TargetAttributes = {
 					0094D7081B8147FB00A76196 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 54ZRCB249H;
+						LastSwiftMigration = 0800;
 					};
 					0094D71D1B8147FB00A76196 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0094D7081B8147FB00A76196;
 					};
 				};
@@ -208,6 +248,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		007265D4A95E2D93F5F7CFDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2073C9AA001C42E838A982DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tip Calc/Pods-Tip Calc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29D651EAC0281F4C769383EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF4AC01F8A8ECFCF8D2EB06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tip CalcTests/Pods-Tip CalcTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		790ACA2F9EB6B52CA8336FAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tip CalcTests/Pods-Tip CalcTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B838455BDB0AB9B1ACC66A2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tip Calc/Pods-Tip Calc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0094D7051B8147FB00A76196 /* Sources */ = {
@@ -270,8 +403,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Jeffrey Limauro (54ZRCB249H)";
@@ -295,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -316,8 +451,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Jeffrey Limauro (54ZRCB249H)";
@@ -334,46 +471,56 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		0094D7291B8147FB00A76196 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A089CB6FF82F94A4490C5BA /* Pods-Tip Calc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Jeffrey Limauro (54ZRCB249H)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jeffrey Limauro (54ZRCB249H)";
+				DEVELOPMENT_TEAM = 54ZRCB249H;
 				INFOPLIST_FILE = "Tip Calc/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LimauroDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "54450225-de1c-444f-a5d0-c12b9aa270a8";
+				PROVISIONING_PROFILE = "394e38b9-5ca7-4e9e-b907-1f82ae9ffa4a";
+				PROVISIONING_PROFILE_SPECIFIER = "Tip Calc Distribution";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0094D72A1B8147FB00A76196 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3D275F0416BB5A825FB9734 /* Pods-Tip Calc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Jeffrey Limauro (54ZRCB249H)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jeffrey Limauro (54ZRCB249H)";
+				DEVELOPMENT_TEAM = 54ZRCB249H;
 				INFOPLIST_FILE = "Tip Calc/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LimauroDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "54450225-de1c-444f-a5d0-c12b9aa270a8";
+				PROVISIONING_PROFILE = "394e38b9-5ca7-4e9e-b907-1f82ae9ffa4a";
+				PROVISIONING_PROFILE_SPECIFIER = "Tip Calc Distribution";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		0094D72C1B8147FB00A76196 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF1980E4CA25DCD8C215FD4 /* Pods-Tip CalcTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -388,12 +535,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LimauroDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tip Calc.app/Tip Calc";
 			};
 			name = Debug;
 		};
 		0094D72D1B8147FB00A76196 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3FB446D159F99D2B99C5744 /* Pods-Tip CalcTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -404,6 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LimauroDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tip Calc.app/Tip Calc";
 			};
 			name = Release;

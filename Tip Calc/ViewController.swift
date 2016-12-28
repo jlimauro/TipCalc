@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var guestAmount: UILabel!
     
-    @IBAction func tapAction(sender: AnyObject) {
+    @IBAction func tapAction(_ sender: AnyObject) {
         //This tapping of view will hid num pad
         billAmount.resignFirstResponder()
         guestNumber.resignFirstResponder()
@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         billAmount.resignFirstResponder()
         guestNumber.resignFirstResponder()
         return true;
@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func CheckGuestCount(sender: UITextField) {
+    @IBAction func CheckGuestCount(_ sender: UITextField) {
         
         if (guestNumber.text != nil && guestNumber.text != "" && (guestNumber.text! as NSString).integerValue != 0)
         {
@@ -79,12 +79,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         displayResult()
     }
     
-    @IBAction func calculateTip(sender: UITextField) {
+    @IBAction func calculateTip(_ sender: UITextField) {
         if (billAmount.text != nil && tipPercent.text != nil)
         {
             if (billAmount.text!.hasPrefix("$"))
             {
-                subTotal = (billAmount.text!.componentsSeparatedByString("$")[1] as NSString).doubleValue
+                subTotal = (billAmount.text!.components(separatedBy: "$")[1] as NSString).doubleValue
             }
             else
             {
@@ -103,7 +103,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func stepperValueChanged(sender: UIStepper) {
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
         
         tipPercent.text = Int(sender.value).description
         
