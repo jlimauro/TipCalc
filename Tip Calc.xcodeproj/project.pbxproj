@@ -496,6 +496,7 @@
 				PROVISIONING_PROFILE = "394e38b9-5ca7-4e9e-b907-1f82ae9ffa4a";
 				PROVISIONING_PROFILE_SPECIFIER = "Tip Calc Distribution";
 				SWIFT_VERSION = 3.0;
+				"TEST_HOST[sdk=*]" = "";
 			};
 			name = Debug;
 		};
