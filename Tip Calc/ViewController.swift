@@ -129,5 +129,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         totalAmount.text = String(format: "$%.2f", totalAmt)
     }
+    
+    
+    @IBAction func btClear(_ sender: Any) {
+        billAmount.text = "";
+        guestNumber.text = "1";
+        guestNum = 1;
+        tipAmount.text = "$0.00";
+        totalAmount.text = "$0.00";
+        guestAmount.text = "$0.00";
+        totalAmt = 0;
+        subTotal = 0;
+    }
 }
 
