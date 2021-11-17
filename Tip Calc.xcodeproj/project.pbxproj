@@ -15,6 +15,31 @@
 		0094D7251B8147FB00A76196 /* Tip_CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D7241B8147FB00A76196 /* Tip_CalcTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		00CA9F6E2744A613008D218E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		00CA9F6F2744A617008D218E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		0094D71F1B8147FB00A76196 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -143,6 +168,8 @@
 				2073C9AA001C42E838A982DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
+				00CA9F6F2744A617008D218E /* PBXBuildRule */,
+				00CA9F6E2744A613008D218E /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
